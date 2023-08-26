@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>活動訂票網 - 訂單結果</title>
+  </head>
+  <body class="needs-validation" novalidate>
+    <!-- 表頭navbar -->
+    <%- include('./layout/header'); -%>
+
+    <!-- 活動訂購 - 訂單確認狀態 -->
+    <div class="wrap mb-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative">
+                <li class="d-flex flex-column align-items-center">
+                  <p class="number d-flex justify-content-center align-items-center number-active mb-0"><i class="icofont-verification-check"></i></p>
+                  <p class="fw-bold mt-2">訂單確認</p>
+                </li>
+                <li class="d-flex flex-column align-items-center">
+                  <p class="number d-flex justify-content-center align-items-center number-active mb-0"><i class="icofont-verification-check"></i></p>
+                  <p class="fw-bold mt-2">結帳付款</p>
+                </li>
+                <li class="d-flex flex-column align-items-center">
+                  <p class="number d-flex justify-content-center align-items-center number-active mb-0">3</p>
+                  <p class="fw-bold mt-2">訂單結果</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- 活動訂購 - 訂購結果 -->
+    <section class="OrderResult mb-5">
+        <div class="container">
+            <i class="icofont-check-circled"></i>
+            <h3>訂購成功</h3>
+        </div>
+    </section>
+    
+    <!-- 活動訂購 - 訂購成功明細 -->
+    <section class="orderSuccess mb-5">
+        <div class="container">
+            <table class="table">
+                <tr class="bt-black">
+                    <td class="fw-bold">訂單編號</td>
+                    <td>892746123</td>
+                </tr>
+                <tr>
+                    <td class="fw-bold">訂購時間</td>
+                    <td>2023/04/28 14:30</td>
+                </tr>
+                <tr>
+                    <td class="fw-bold">票券</td>
+                    <td>改頭換面票（含大改造）$8000</td>
+                </tr>
+                <tr>
+                    <td class="fw-bold">取票序號</td>
+                    <td class="red-color">95G54J4434</td>
+                </tr>
+                <tr>
+                    <td class="fw-bold">取票號碼</td>
+                    <td class="red-color">04597101</td>
+                </tr>
+            </table>
+            <p>
+                請至 7-Eleven 完成取票，請於 ibon 點選【購票/取
+                票/訂房】>【售票系統】>【取票】>【拓元售票系統】。
+                若您未前往取票，本筆交易仍視為完成，不可取消訂單。
+                若需退票，請按照退票辦法進行申請。
+            </p>
+        </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

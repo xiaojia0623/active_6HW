@@ -1,0 +1,58 @@
+
+//登入頁
+.memberlogin{
+    .container{
+        margin: 0 auto;
+        .payment-title{
+            text-align: center;
+            img{
+                object-fit: cover;
+                width: 32px; height: 32px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 34.49px;
+                font-family: 'Noto Serif TC';
+                margin-bottom: 30px;
+            }
+        }
+        .login-info{
+            margin: 0 auto;
+            max-width:636px;
+            input{
+                background-color: #ebece2;
+                border-radius: 0%;
+                border:3px solid #030303;
+                font-size: 20px;
+                line-height: 28.96px;
+                color:#878787;
+                margin-bottom: 10px;
+            }
+        }
+        .loginBtn{
+            text-align: center;
+            .btn-black{
+                margin:  20px auto;
+                display: block;
+                font-size: 20px;
+                background-color: #030303;
+                color:#ffffff;
+                padding:10px;
+                width: 416px;
+                &:hover{
+                    color:#FBFF22;
+                }
+            }
+        }
+    }
+}
+
+@include iphone{
+    .memberlogin{
+        .btn-black{
+            max-width: 100%;
+        }
+    }
+}

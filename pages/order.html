@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>活動訂票網 - 訂單確認</title>
+  </head>
+  <body>
+    <!-- 表頭navbar -->
+    <%- include('./layout/header'); -%>
+
+    <!-- 活動訂購 - 訂單確認狀態 -->
+    <div class="wrap mb-lg-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6 mx-auto">
+                <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative">
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number d-flex justify-content-center align-items-center number-active mb-0">1</p>
+                    <p class="fw-bold mt-2">訂單確認</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number d-flex justify-content-center align-items-center mb-0">2</p>
+                    <p class="fw-bold mt-2">結帳付款</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number d-flex justify-content-center align-items-center mb-0">3</p>
+                    <p class="fw-bold mt-2">訂單結果</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <!-- 活動訂購 - 訂單購買明細 -->
+    <section class="orderDetail mb-3 mb-lg-5">
+        <div class="container">
+            <h2>返老還童-制服聯誼</h2>
+            <table class="table">
+                <tr class="bt-black">
+                    <td class="fw-bold">日期</td>
+                    <td>2023/5/12</td>
+                </tr>
+                <tr>
+                    <td class="fw-bold">票種</td>
+                    <td>改頭換面票（含大改造）</td>
+                </tr>
+                <tr>
+                    <td class="fw-bold">票價</td>
+                    <td>$8000</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- 活動訂購 - 訂購聯絡人 -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-title">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="閃亮圖">
+                <h3>聯絡人資料</h3>
+            </div>
+            <div class="contactInfo">
+                <div class="mb-3">
+                    <label for="ordername" class="form-label">聯絡人姓名</label>
+                    <input type="text" class="form-control" id="ordername" placeholder="請輸入聯絡人名稱">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入Email">
+                </div>
+                <div class="mb-5">
+                    <label for="userphone" class="form-label">手機</label>
+                    <input type="tel" class="form-control" id="userphone" placeholder="請輸入手機號碼">
+                </div>
+                <div class="formBtns mb-5">
+                    <a href="pay.html" class="btn-black">確認表單資料<i class="icofont-double-right"></i></a>
+                    <a href="#" class="btn-noColor">取消購票</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+//表頭navbar
+.navbar{
+  padding: 0 12px;
+  border-bottom: 3px solid #000;
+  margin-bottom: 20px;
+  .container{
+    margin: 0 auto;
+    max-width: 1296px;
+    padding: 10px 0px;
+    .logo{
+      padding: 0; 
+      margin:0 50px 0 0;
+      align-self: end;
+      display: flex;
+      img{
+        width: 53px;height: 53px;
+      }
+      .logoContent{
+        display: flex;
+        align-items: end;
+        h1{
+          font-size: 32px;
+          font-weight: bold;
+          font-family: 'Yeseva One';
+        }
+        .logoName{
+          font-size:16px;
+          font-family: 'Noto Serif TC';
+          align-self: end;
+          font-weight: bold;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .search-container{
+      max-width: 335px;
+      display: block;
+      margin-right: auto;
+      .input-group{
+        border: 2px solid #030303;
+        input{
+          border-radius:0%;
+          background-color: #ebece2;
+        }
+        .btn{
+            border-radius:0%;
+            background:#030303;
+            i{
+              color:yellow;
+            }
+        }
+      }
+    }
+    .collapse{
+      .nav-link{
+        font-weight: bold;
+        &:hover{
+          color:#9C9E18;
+        }
+      }
+    }
+  }
+}
+@include iphone{
+  .navbar{
+    .container{
+      .logo{
+        margin-right: 10px;
+        img{
+          width: 40px; height: 40px;
+        }
+        .logoContent{
+          display: none;
+        }
+      }
+      .search-container{
+        max-width: 60%;
+        display: block;
+        margin-right: auto;
+      }
+      .collapse{
+        .navbar-nav{
+          padding-top: 10px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+  }
+}
+//首頁開賣中 按鈕添加modal
+.modal-dialog{
+  .modal-content{
+    border-radius: 0%;
+    border: 3px solid #030303;
+    .modal-header{
+      border-bottom: 3px solid #030303;
+    }
+    .modal-footer{
+      border-top: none;
+      .btn{
+        max-width: 100%;
+        margin: 0 auto;
+        &:hover{
+          color: #FBFF22;
+        }
+      }
+    }
+  }
+}

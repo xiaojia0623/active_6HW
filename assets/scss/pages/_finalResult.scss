@@ -1,0 +1,44 @@
+
+//活動訂購 - 訂購結果
+.OrderResult{
+    .container{
+        margin: 0 auto;
+        .icofont-check-circled{
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 20px;
+            display: block;
+            font-weight: bold;
+        }
+        h3{
+            font-size: 32px;
+            text-align: center;
+            line-height: 45.98px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+//活動訂購 - 訂購成功明細
+.orderSuccess{
+    .container{
+        margin: 0 auto;
+        max-width:636px;
+        .table{
+            tr{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #030303;
+                td{
+                    border-bottom:none;
+                }
+            }
+        }
+        p{
+            color:#4F4F4F;
+            line-height: 24px;
+        }
+    }
+}

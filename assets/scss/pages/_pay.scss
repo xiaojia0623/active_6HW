@@ -1,0 +1,117 @@
+
+//結帳付款明細
+.pay-content{
+    .contentTitle{
+        max-width: 100%;
+        text-align: center;
+        display: block;
+        h2{
+            font-size: 48px;
+            font-weight: 700;
+            font-family: 'Noto Serif TC';
+            line-height: 68.98px;
+        }
+        p{
+            margin: 20px auto;
+            text-align: center;
+            background-color: #030303;
+            color:#FBFF22;
+            max-width: 674px;
+            padding: 10px;
+            line-height: 23.17px
+        }
+    }
+    .container{
+        margin: 30px auto;
+        width:636px;
+        .table{
+            tr{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #030303;
+                td{
+                    border-bottom:none;
+                }
+            }
+        }
+    }
+}
+
+@include iphone{
+    .pay-content{
+        .contentTitle{
+            padding: 0 12px;
+            h2{
+                font-size: 32px;
+                text-align: start;
+                line-height: 45.98px;
+            }
+        }
+        .container{
+            max-width: 100%;
+        }
+    }
+}
+
+//結帳方式
+.payment{
+    .container{
+        margin: 0 auto;
+        .payment-title{
+            text-align: center;
+            img{
+                object-fit: cover;
+                width: 32px; height: 32px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 34.49px;
+                font-family: 'Noto Serif TC';
+                margin-bottom: 30px;
+            }
+        }
+        .ticketInfo{
+            margin: 0 auto;
+            max-width:636px;
+            display: block;
+            input{
+                background-color: #ebece2;
+                border-radius: 0%;
+                border:3px solid #030303;
+                font-size: 20px;
+                line-height: 28.96px;
+                color:#878787;
+                margin-bottom: 10px;
+            }
+            p{
+                margin-bottom: 20px;
+                color:#4F4F4F;
+                span{
+                    color:#C96464;
+                }
+            }
+        }
+        .chooseWay{
+            margin: 0 auto;
+            max-width:636px;
+            cursor: pointer;
+            .formBtns{
+                text-align: center;
+                .btn-black{
+                    margin:  20px auto;
+                    display: block;
+                    font-size: 20px;
+                    background-color: #030303;
+                    color:#ffffff;
+                    padding:10px;
+                    max-width: 416px;
+                    &:hover{
+                        color:#FBFF22;
+                    }
+                }
+            }
+        }
+    }
+}

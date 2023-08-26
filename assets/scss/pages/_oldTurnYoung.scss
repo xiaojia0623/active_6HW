@@ -1,0 +1,223 @@
+
+//返老還童頁面拚塊區
+.rejuv{
+    .container{
+        margin: 0 auto;
+        .photoDate{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+            .re-photo{
+                width: 100%;
+                align-self: baseline;
+                border: 3px solid #030303;
+                padding: 10px;
+                img{
+                    width: 100%; height: 550px;
+                    object-fit: cover;
+                }
+            }
+            .yearDate{
+                text-align:center;
+                max-width: 196px;
+                h2{
+                    font-weight:bold;
+                    font-size:48px;
+                    padding:20px 30px;
+                    margin-bottom:20px;
+                    border:3px solid #000;
+                    font-family: 'Yeseva One';
+                }
+                .datefun{
+                    padding:17px 0;
+                    border:3px solid #000;
+                  .monthDate{
+                    p{
+                        font-family: 'Yeseva One';
+                        font-weight:bold;
+                        font-size:48px;
+                    }
+                  }
+                  .bigline{
+                        margin:60px 0;
+                        width: 100px;
+                        transform: rotate(120deg);
+                        opacity: 1;
+                        border:2px solid #030303;
+                        margin-left:40px;
+                  }
+                  .time{
+                        font-size:32px;
+                        font-weight:bold;
+                        font-family: 'Yeseva One';
+                        .smallLine{
+                            max-width: 32px;
+                            transform: rotate(90deg);
+                            border:1px solid #030303;
+                            opacity: 1;
+                            margin-left: 70px;
+                        }
+                    }
+                }
+              }
+        }
+    }
+}
+
+@include iphone{
+    .rejuv{
+        .container{
+            padding: 0 12px;
+            .photoDate{
+                flex-direction: column;
+                .re-photo{
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                    img{
+                        max-height: 180px; 
+                    }
+                }
+                .yearDate{
+                    gap:12px;
+                    display:flex;
+                    max-width:100%;
+                    height: 78px;
+                    h2{
+                      font-size:24px;
+                      padding:20px 15px;
+                      margin:0;
+                    }
+                    .datefun{
+                        display: flex;
+                        align-items: center;
+                        padding: 30px 15px;
+                        width: 100%;
+                        justify-content: space-around;
+                      .monthDate{
+                        p{
+                          font-size:22px;
+                          margin: 0;
+                        }
+                      }
+                      .bigline{
+                          width: 50px;
+                          margin: 0;
+                        }
+                      .time{
+                        font-size:16px;
+                        
+                        p{
+                          font-size:16px;
+                          margin:5px 0;
+                        }
+                        .smallLine{
+                          width:16px;
+                          margin: 9px 15px;
+                        }
+                      }
+                    }
+                  }
+            }
+        }
+    }
+}
+
+//返老還童頁面 一行簡介 + tag
+.intro{
+    .container{
+        margin: 0 auto;
+        text-align: start;
+        font-family: 'Noto Serif TC';
+        h2{
+            font-size: 60px;
+            line-height: 86.22px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 22px;
+            line-height: 31.86px;
+        }
+    }
+}
+
+@include iphone{
+    .intro{
+        .container{
+            padding: 0 12px;
+            h2{
+                font-size: 32px;
+                line-height: 45.98px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .tag{
+                display: none;
+            }
+        }
+    }
+}
+
+//返老還童頁面 活動前言
+.sanWorld{
+    .container{
+        .worldContent{
+            border:3px solid #030303;
+            padding:20px;
+            p{
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+//返老還童頁面 table
+.ticketZone{
+    .container{
+        margin: 0 auto;
+    }
+    .table{
+        tbody{
+            .table-btn{
+                .pc-look{
+                    display: block;
+                    max-width: 90px;
+                    padding: 5px 10px;
+                    border-radius: 0%;
+                    border: 2px solid #030303;
+                    &:hover{
+                    background-color: #030303;
+                    color:#FBFF22;
+                    }
+                }
+                .phone-look{
+                    display: none;
+                    
+                }
+            }
+        }
+    }
+}
+
+@include iphone{
+    .ticketZone{
+        .container{
+            padding: 0 12px;
+        }
+        .table{
+            .table-btn{
+                a.pc-look{
+                  display:none;
+                }
+                a.phone-look{
+                  display: block;
+                  max-width: 70px;
+                  padding: 5px 10px;
+                  border-radius: 0%;
+                  border: 2px solid #030303;
+                }
+              }
+          }
+    }
+}

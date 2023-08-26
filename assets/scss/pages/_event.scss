@@ -1,0 +1,51 @@
+
+//event頁面 tags區塊
+.eventTags{
+    .container{
+        margin: 0 auto;
+        .tag{
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            .tagItem{
+              margin-right: 10px;
+              margin-bottom: 15px;
+              border:1px solid #030303;
+              border-left:4px solid #030303;
+              font-weight: bold;
+              padding: 0px 20px;
+              cursor: pointer;
+              &:hover{
+                background-color: #030303;
+                color: #ffffff;
+                border-left: 4px solid #FBFF22;
+              }
+            }
+          }
+    }
+}
+
+@include iphone{
+    .eventTags{
+        padding: 0 12px; 
+    }
+}
+
+//event頁面 tags區塊用 首頁的tag
+
+//event頁面 下方頁碼
+.Page{
+    .pagination{
+        justify-content: center;
+        .page-item{
+            border-radius:0%;
+        }
+        .page-link{
+            min-width: 40px;
+            min-height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

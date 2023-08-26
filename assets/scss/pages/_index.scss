@@ -1,0 +1,549 @@
+
+
+//首頁banner 圖 + 文字
+.banner{
+  .container{
+    margin: 0 auto;
+    .bannerImg{
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
+      background-size: cover;
+      background-position: center;
+      height: 518px;
+    }
+    .dateContent{
+      color:#ffffff;
+      font-family: 'Yeseva One';
+      font-size: 60px;
+      padding: 30px 50px;
+      .title{
+        display: none;
+      }
+    }
+    .bannerContent{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20%;
+      h2{
+        text-align: center;
+        color:#ffffff;
+        font-family: 'Noto Sans TC';
+        font-size: 24px;
+        line-height: 34.49px;
+      }
+      p{
+        text-align: center;
+        color:#ffffff;
+        font-family: 'Noto Sans TC';
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@include iphone{
+  .banner{
+    .container{
+      .bannerImg{
+        height: 350px;
+        max-width: 100%;
+      }
+      .dateContent{
+        padding-left: 20px;
+        font-size: 32px;
+        .title{
+          display: block;
+        }
+      }
+      .bannerContent{
+        margin-top: 50%;
+        h2{
+          margin-top: auto;
+          font-size: 18px;
+          line-height: 25.87px;
+        }
+        p{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+//首頁 分類列表
+.homeOption{
+  margin-top: 20px;
+  .container{
+    .optionItem{
+      margin: 0;
+      padding: 0; 
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      li{
+        width: 196px;height: 196px;
+        padding: 0px;
+        border:2px solid #000;
+        img{
+          display: block;
+          margin: 0 auto;
+          transform: translate(0%, 50%);
+          text-align: center;
+          width: 80px;height: 80px;
+        }
+        .activeName{
+          font-size: 24px;
+          margin-top: 50px;
+          text-align: center;
+        }
+        .blackbg{
+          a{
+            p{
+              font-size: 48px;
+              text-align: center;
+              color:#FBFF22;
+              margin: 20px 0;
+    
+            }
+          }
+        }
+        
+      }
+      .explore{
+        background: #030303;
+      }
+    }
+  }
+}
+
+@include iphone{
+  .homeOption{
+    margin: 10px 0;
+    .container{
+      .optionItem{
+        padding: 0;
+        li{
+          width: 90px;height: 90px;
+          padding: 0;
+          img{
+            width: 32px;height: 24px;
+            transform: translate(0%, 60%);
+            padding:0;
+          }
+          .activeName{
+            font-size: 16px;
+            margin: 20px 0;
+          }
+        }
+        .explore{
+          .blackbg{
+            p{
+              font-size: 24px;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//首頁 活動
+.actives{
+  .activeItem{
+    margin-bottom: 20px;
+    .active-header{
+      border-bottom: 2px solid #030303;
+      margin-bottom: 15px;
+      h2{
+        font-size: 48px;
+        font-family: 'Yeseva One';
+      }
+    }
+    .active-body{
+      img{
+        width: 416px; height: 255px;
+        object-fit: cover;
+      }
+      .active-content{
+        border-bottom: 2px solid #030303;
+        h3{
+          margin-top: 12px;
+        }
+        p{
+          margin-bottom: 16px;
+          flex-grow: 1;
+        }
+      }
+    }
+    .active-footer{
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 2px solid #030303;
+      .clubActive{
+        align-items: center;
+        &:hover{
+          text-decoration: underline;
+        }
+        img{
+          width: 24px;height: 24px;
+          margin-right: 10px;
+        }
+        p{
+          display: contents;
+        }
+      }
+      .sell{
+        align-items: center;
+        p{
+          margin: 0;
+          font-size:16px;
+          align-items: center;
+          position: relative;
+          z-index: 100;
+          .icofont-double-right{
+            width: 16px; height: 16px;
+            align-items:end;
+          }
+          &:hover{
+              &::before{
+              content: "";
+              width:24px;
+              height:24px;
+              background:yellow;
+              border-radius:50%;
+              position: absolute;
+              left:0;
+              opacity:0;
+          }
+          &::after{
+            content: "";
+            width:24px;
+            height:24px;
+            border-radius:50%;
+            background:yellow;
+            position: absolute;
+            left:0;
+            opacity:.6;
+          }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include iphone{
+  .actives{
+    .activeItem{
+      .active-header{
+        h2{
+          font-size: 32px;
+        }
+      }
+      .active-body{
+        h3{
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 10px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+//首頁 online區
+.online{
+  .container{
+    max-width: 1296px;
+    margin: 0 auto;
+    .onlineImg{
+      padding: 0 12px;
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true);
+      background-position:center right;
+      background-size: cover;
+      height: 317px;
+    }
+    .onlineContent{
+      h3{
+        font-size: 32px;
+        font-weight: bold;
+      }
+      p{
+        margin-bottom: 45px;
+      }
+      .btn{
+        background-color: #030303;
+        color: #ffffff;
+        border-radius: 0%;
+        width: 100%;
+        &:hover{
+          color:#FBFF22;
+        }
+        i{
+          width: 16px; height: 16px;
+        }
+      }
+    }
+  }
+}
+
+.tag{
+  display: flex;
+  justify-content: start;
+  .tagItem{
+    margin-right: 10px;
+    border:1px solid #030303;
+    border-left:4px solid #030303;
+    font-size: 16px;
+    padding: 0px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover{
+      background-color: #030303;
+      color: #ffffff;
+      border-left: 4px solid #FBFF22;
+    }
+  }
+}
+
+
+@include iphone{
+  .online{
+    .container{
+      .onlineImg{
+        max-width: 100%;
+        padding: 0 12px;
+        margin-bottom: 20px;
+      }
+      .onlineContent{
+        h3{
+          font-size: 18px;
+        }
+        .tag{
+          .tagItem{
+            font-size: 14px;
+            padding: 0px 10px;
+          }
+        }
+        p{
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+//首頁  黑色跑馬燈區
+.marqee {
+  height:4em;
+	margin: 0 auto;
+	overflow: hidden; 
+	position: relative;
+	background: black;
+  p{
+    padding:10px 0;
+    font-size: 32px;
+    font-weight: bold;
+    animation: marqee 15s linear infinite;
+    position: absolute;
+    white-space: nowrap;
+    margin-right: 2em;
+    color:#FBFF22;
+  }
+}
+
+@include iphone{
+  .marqee{
+    height:3em;
+    margin: 0;
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+@keyframes marqee {
+	0% {
+		left: 100%;
+		transform: translateX(0%);
+	}
+
+	100% {
+		left: 0;
+		transform: translateX(-100%);
+	}
+}
+
+//首頁  歪歪卡片區
+.cards{
+  .container{
+    margin: 0 auto;
+    max-width: 1296px;
+    ul{
+      display: flex;
+      justify-content: space-between;
+      .cardActive{
+        border:2px solid #030303;
+        padding:10px;
+        position: relative;
+        top:0;left: 0; right: 0;
+        .middleCard{
+          position: absolute;
+          top:-20px; left:35%;
+          
+          p{
+            background-color: #ffffff;
+            padding: 5px 10px;
+          }
+        }
+        .cardImg{
+          margin-bottom: 10px;
+          img{
+            width: 274px; height: 274px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include iphone{
+  .cards{
+    .container{
+      padding: 0 12px;
+      margin: 0 auto;
+      ul{
+        flex-direction: column;
+        .cardActive{
+          max-width: 291px;;
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+}
+
+
+//首頁 聯絡我們/訂閱我們
+.fallowSub{
+  padding: 45px 0;
+  border-bottom: 2px solid #030303;
+  .container{
+    margin: 0 auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: center;
+  }
+  .card{
+    border: 2px solid #030303;
+    background-color: #ebece2;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius:0%;
+    width: 100%;
+    .card-header{
+      text-align: start;
+      background-color: #ebece2;
+      border-bottom: 2px solid #030303;
+      h4{
+        padding: 10px;
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+    .card-body{
+      padding: 20px;
+      p{
+        line-height: 23.17px;
+        margin-bottom: 25px;
+      }
+      .info{
+        margin-bottom: 20px;
+        i{
+          padding: 10px;
+          background-color: #030303;
+          color:#ffffff;
+          margin-right: 10px;
+          &:hover{
+            color:#FBFF22;
+          }
+        }
+      }
+      .inputEmail{
+        border: 2px solid #030303;
+        input{
+          background-color: #ebece2;
+          width: 100%; 
+          padding: 15px 15px;
+          color:#4F4F4F;
+        }
+      }
+    }
+    .btn{
+      padding: 10px;
+      background-color: #030303;
+      color:#ffffff;
+      border-radius:0%;
+      &:hover{
+        color:#FBFF22;
+      }
+    }
+  }
+}
+
+@include iphone{
+  .fallowSub{
+    .container{
+      margin: 0 auto;
+      padding: 0 12px;
+      flex-direction: column;
+      .card{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+//首頁 表尾語句
+.sentance{
+  .container{
+    margin: 0 auto;
+    padding:40px 0;
+    text-align: center;
+    h5{
+      font-size: 32px;
+      line-height: 45.95px;
+      font-weight: bold;
+    }
+    p{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+@include iphone{
+  .sentance{
+    .container{
+      padding:20px 0;
+      h5{
+        font-size: 16px;
+        line-height: 25.87px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 20.12px;
+      }
+    }
+  }
+}
+

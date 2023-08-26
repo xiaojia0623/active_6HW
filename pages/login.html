@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>活動訂票網 - 登入頁</title>
+  </head>
+  <body>
+    <!-- 表頭navbar -->
+    <%- include('./layout/header'); -%>
+
+    <!-- 活動訂購 - 登入title -->
+    <section class="memberlogin mb-5">
+        <div class="container">
+            <div class="payment-title mb-5">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="閃亮圖">
+                <h3>會員登入</h3>
+            </div>
+            <form class="g-3 needs-validation" novalidate>
+                <div class=" mb-2 login-info">
+                  <label for="validationCustom03" class="form-label">帳號</label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="請輸入帳號" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                   <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                  </div>
+                  <div class=" mb-3 login-info">
+                    <label for="validationCustom05" class="form-label">密碼</label>
+                    <input type="password" class="form-control" id="validationCustom05" placeholder="請輸入密碼" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                    <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="loginBtn mb-5">
+                    <button class="btn-black" type="submit">登入<i class="icofont-double-right"></i></button>
+                </div>
+              </form>
+            
+        </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
