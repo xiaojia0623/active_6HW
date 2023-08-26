@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- google fonts css links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Serif:wght@400;900&family=Yeseva+One&display=swap" rel="stylesheet">
+<!-- icons css link -->
+    <title>活動訂票網 - 結帳付款</title>
+    <script type="module" crossorigin src="/active_6HW/assets/main-1c683d20.js"></script>
+    <link rel="stylesheet" href="/active_6HW/assets/main-f42f2768.css">
+  </head>
+  <body class="needs-validation" novalidate>
+    <!-- 表頭navbar -->
+    <!-- 表頭navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container align-items-center">
+      <a href="index.html" class="logo">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo圖">
+        <div class="logoContent">
+          <h1 class="ms-3">7TAO</h1>
+          <p class="logoName">活動訂票網</p>
+        </div>
+      </a>
+      <form action="" class="search-container">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="探索活動" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <a href="#" class="btn" type="button" id="button-addon2"><i class="icofont-search-1"></i></a>
+        </div>
+      </form>
+
+      <button class="navbar-toggler border-dark border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><i class="icofont-ui-file"></i>REGISTER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="icofont-ui-user"></i>LOGIN</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+<!-- Modal 元件 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold ml-a" id="exampleModalLabel">立刻成為7TAO會員</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+        您也可以先報名活動，日後再註冊帳號，<br>
+        系統會在認證您的Email後，協助您找回舊的訂單。</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary rounded-0 mb-3" data-bs-dismiss="modal">立即成為會員</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- 活動訂購 - 訂單確認狀態 -->
+    <div class="wrap mb-lg-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6 mx-auto">
+                <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative">
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number d-flex justify-content-center align-items-center number-active mb-0"><i class="icofont-verification-check"></i></p>
+                    <p class="fw-bold mt-2">訂單確認</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number d-flex justify-content-center align-items-center number-active mb-0">2</p>
+                    <p class="fw-bold mt-2">結帳付款</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number d-flex justify-content-center align-items-center mb-0">3</p>
+                    <p class="fw-bold mt-2">訂單結果</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <!-- 活動訂購 - 結帳付款明細 -->
+    <section class="pay-content">
+        <div class="contentTitle">
+            <h2>返老還童-制服聯誼</h2>
+            <p>您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+        </div>
+        <div class="container">
+            <table class="table">
+                <tr class="bt-black">
+                    <td class="fw-bold">訂單編號</td>
+                    <td>892746123</td>
+                </tr>
+                <tr>
+                    <td class="fw-bold">票券</td>
+                    <td>改頭換面票（含大改造）$8000</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- 活動訂購 - 結帳方式 -->
+    <section class="payment">
+        <div class="container">
+            <div class="payment-title">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="閃亮圖">
+                <h3>結帳資訊</h3>
+            </div>
+            <div>
+                <div class="ticketInfo">
+                    <label for="validationDefault03" class="form-label">取票資訊</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="請輸入身分證字號或護照號碼" required>
+                    <p>請輸入您的<span>身分證字號</span> 供取票使用，外籍人士請輸入 <span>護照號碼</span></p>
+                </div>
+                <div class="chooseWay">
+                    <p class="paytitle">付款方式</p>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" id="masterCard"  name="radio-stacked" required>
+                        <label class="form-check-label" for="masterCard">信用卡</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="atmWay" name="radio-stacked" required>
+                        <label class="form-check-label" for="atmWay">ATM虛擬帳號</label>
+                    </div>
+                    <div class="formBtns mb-5">
+                        <a href="finalResult.html" class="btn-black">確認訂單並繳費 $8000<i class="icofont-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- 首頁 表尾 -->
+<footer class="footer">
+<p>© 7TAO七逃. All Rights Reserved</p>
+</footer>
+    
+  </body>
+</html>
